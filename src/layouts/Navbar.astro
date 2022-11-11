@@ -1,0 +1,102 @@
+---
+const d=document;
+const $menu= document.querySelector(".menu")df
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header" >
+    <h1>EstebanDev</h1>
+    <div class="header-menu none">
+      <a href="">Acerca</a>
+      <a href="">Proyectos</a>
+      <a href="">skills</a>
+      <a href="">contacto</a>
+    </div>
+    <div>
+      <img src="../../public/menu.svg" alt="">
+    </div>
+  </header>
+  <script>
+    
+  </script>
+</body>
+</html>
+<style>
+  :root{
+    --c-pry : #1b232d;
+    --c-pry-a : #1b232d60;
+    --c-sec :#ed3c4d;
+    --c-third:#ffffff;
+  }
+  .header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+
+  }
+  a{
+    color:var(--c-third);
+    text-decoration: none;
+
+  }
+  .header-menu{
+    display: grid;
+    position:fixed;
+    inset:10px 10px;
+    border-radius: 10px;
+    background-color: #454c5488;
+    font-size: 30px;
+    max-width: 550px;
+    min-width: 320px;
+    overflow: hidden;
+    animation:showMenu 2s ease 1s forwards;
+  }
+  a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+  a:hover{
+    color: #ed3c4d;
+    background-color: black;
+    curso:pointer;
+    transition: font-size .5s ease ;
+    font-size: 34px;
+    
+  }
+  /* .none{
+    display: none;
+  } */
+
+
+  /* ---------------animaciones----------- */
+
+  @keyframes showMenu{
+    from{
+      inset:10px 10px;
+    }
+    to{
+
+      inset:0% 0% 99% 100%;
+      
+    }
+  }
+</style>
