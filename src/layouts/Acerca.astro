@@ -1,0 +1,74 @@
+---
+import Navbar from '../components/Navbar';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <Navbar client:load/>
+  <div class="box-img">
+    <img src="https://placeimg.com/150/150/animals" alt="" />
+  </div>
+  <div>
+    <h1>Hola, yo soy <br/> Esteban Salas sulca <br/> Frontend Developer <br/> en React.js</h1>
+  </div>
+  <div class="main-description">
+    
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptatem temporibus reiciendis tempora, est explicabo dignissimos, iusto quaerat sunt accusamus dolores in libero nisi adipisci asperiores pariatur facere enim provident.
+    </p>
+    <button class="btn-main">cv</button>
+  </div>
+  <slot/>
+</body>
+</html>
+
+<style>
+  :root{
+  --c-pry :  #202733;
+  --c-pry-a : #1b232d60;
+  --c-sec :#ed3c4d;
+  --c-third:#ffffff;
+}
+  body{
+
+		background-color: var(--c-pry);
+		color: white;
+    max-width: 1440px;
+    display: grid;
+    grid-template-rows: 10% 30% 20% 40%; 
+    height: 100vh;
+    padding: 10px;
+	}
+  .box-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 1000px;
+    background-color: blue;
+    overflow: hidden;
+    margin: 20px auto ;
+  }
+  .btn-main{
+    width:250px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: var(--c-sec);
+    padding:0;
+    border:none;
+    margin: 30px 0px;
+  }
+  .main-description{
+    padding-top: 10px;
+ 
+    
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+</style>
