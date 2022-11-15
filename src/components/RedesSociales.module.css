@@ -1,0 +1,17 @@
+.link{
+  display: grid;
+  place-items: center;
+  
+
+  margin: 20px 0px;
+}
+.imgLink {
+  width: 50px;
+  
+} 
+h2 {
+  margin: 30px 0;
+}
+.a:hover{
+  transform: scale(1.2);
+}

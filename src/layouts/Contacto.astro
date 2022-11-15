@@ -1,35 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h2 id="contacto">CONTACTO</h2>
-  <div class="box-links">
-    <div class="links"><img src="../../public/phone-call.svg" alt=""> <span>927 859 435</span> </div>
-    <div class="links"><img src="../../public/icons8-gmail-logo.svg" alt=""> esalassulca@gmail.com</div>
-    <div class="links"><img src="../../public/github.svg" alt=""> https://github.com/devSalas </div>
-    <div class="links"><img src="../../public/linkedin.svg" alt=""> https://www.linkedin.com/in/esteban-salas-sulca-28354020a/</div>
+---
+import RedesSociales from "../components/Redes-sociales";
+---
+
+
+  <div class="containerContacto">
+    <h2 id="contacto">CONTACTO</h2>
+    <div class="box-links">
+
+      <RedesSociales url={"https://www.linkedin.com/in/esteban-salas-sulca-28354020a/"} img={"../../public/phone-call.svg"} nombre={"927 859 435"}/>
+      <RedesSociales url={"https://mail.google.com/mail/u/0/#inbox"} img={"../../public/icons8-gmail-logo.svg"} nombre={"esalassulca@gmail.com "}/>
+      <RedesSociales url={"https://www.linkedin.com/in/esteban-salas-sulca-28354020a/"} img={"../../public/linkedin.svg"} nombre={"linkedin"}/>
+      <RedesSociales url={"https://github.com/devSalas"} img={"../../public//github.svg"} nombre={"Github"}/>
+    </div>
   </div>
+    <style>
+      .links {
+        display: grid;
+        place-items: center;
 
-</body>
-</html>
+        margin: 20px 0px;
+      }
+      .box-links{
+        max-width:700px;
+        margin: auto;
+      }
+      img {
+        width: 50px;
+      }
+      h2 {
+        margin: 30px 0;
+      }
+      .containerContacto{
+        padding-top: 60px;
+      }
 
-<style>
-  .links{
-    display: grid;
-    place-items: center;
+
+
+      @media  (min-width:575px) and (max-width:1440px) {
+        .box-links{
+          display: grid;
+          grid-template-columns: repeat(2,45%);
+          gap: 10% 10%;
+          margin-bottom: 40px;
+          
+        }
+      }
     
-    margin: 20px 0px;
-  }
-  img{
-    width: 50px;
-  }
-  h2{
-    margin: 30px 0;
-  }
+    
+    </style>
 
-</style>
+    
+

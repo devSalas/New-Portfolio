@@ -2,50 +2,76 @@
 import Navbar from '../components/Navbar';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+
+<div class="containerAcerca">
   <Navbar client:load/>
+  <div id="tAcerca"></div>
   <div class="box-img">
     <img src="https://placeimg.com/150/150/animals" alt="" />
   </div>
-  <div>
-    <h1>Hola, yo soy <br/> Esteban Salas sulca <br/> Frontend Developer <br/> en React.js</h1>
-  </div>
+    <h1>
+      <span class="span" style='--content:"Hola, yo soy";--start-color:#;--end-color:#; '>Hola, yo soy </span>
+      <span class="span span-name" style='--content:"Esteban Salas sulca";--start-color:#ed3c4d;--end-color:#ed3c4d; '>Esteban Salas sulca </span>
+      <span class="span"  style='--content:"Frontend Developer  en React.js";--start-color:#;--end-color:#; '>Programador  en <span class="spanTd">React.js</span> y  <span class="spanTd">Node.js</span> </span>
+
+    </h1>
+
   <div class="main-description">
     
-    <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda voluptatem temporibus reiciendis tempora, est explicabo dignissimos, iusto quaerat sunt accusamus dolores in libero nisi adipisci asperiores pariatur facere enim provident.
+    <p class="description-p">
+      Llevo 2 años en este mundo de la programacion
+      <br/>
+      construyendo sitios web como aplicaciones web, aplicando tecnologias modernas.
     </p>
-    <button class="btn-main">cv</button>
+    <button class="btn-main"> <a href="../../public/cv/Curriculo-Esteban Salas sulca.pdf" target="_blank">cv</a> </button>
   </div>
+ <!--  <div class="shadow1"></div>
+  <div class="shadow2"></div> -->
   <slot/>
-</body>
-</html>
+</div>
+
 
 <style>
   :root{
   --c-pry :  #202733;
   --c-pry-a : #1b232d60;
-  --c-sec :#ed3c4d;
+  --c-sec :#ca192b;
+  --c-sec-b:#dd1327;
   --c-third:#ffffff;
 }
-  body{
-
-		background-color: var(--c-pry);
-		color: white;
+.shadow1{
+  position: absolute;
+  bottom:0%;
+  left: 10%;
+  width: 2px;
+  height: 2px;
+  background-color:  #ca192b;
+  border-radius: 100%;
+  box-shadow: 0px 0px 100px 100px #7b0d18;
+}
+.shadow2{
+  position: absolute;
+  top:30%;
+  right: -4%;
+  width: 2px;
+  height: 2px;
+  background-color:  #95464e;
+  border-radius: 100%;
+  box-shadow: 0px 0px 100px 100px #7b0d18;
+}
+  .containerAcerca{
+		
+		/* color: white !important; */
     max-width: 1440px;
     display: grid;
     grid-template-rows: 10% 30% 20% 40%; 
     height: 100vh;
-    padding: 10px;
+    overflow: hidden;
+
 	}
+  /* .containerAcerca>*{
+    outline: 2px solid white;
+  } */
   .box-img{
     width: 150px;
     height: 150px;
@@ -62,13 +88,104 @@ import Navbar from '../components/Navbar';
     padding:0;
     border:none;
     margin: 30px 0px;
+    cursor: pointer;
+  }
+  .btn-main:hover{
+    box-shadow: 0 0 25px var(--c-sec);
+  }
+
+
+
+  .btn-main a{
+    color:var(--c-third);
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    height: 100%;
   }
   .main-description{
-    padding-top: 10px;
- 
+    padding: 10px 30px;
+  
     
   }
+  .description-p{
+    text-align: center;
+    max-width:500px;
+    margin: auto;
+    /* padding: 0 20px; */
+  }
+
   h1{
-    font-size: 1.5rem;
+/*     position: relative;
+    z-index: 100; */
+    font-size: 1.6rem;
+    text-align: center;
+    place-self: center;
+    padding: 40px;
+    font-weight: 700;
+    letter-spacing: -.06em;
+    
+  }
+  .span{
+    display: block;
+    line-height: 1.1;
+  }
+
+  .spanTd{
+    color:var(--c-sec-b) ;
+  }
+  .span-name{
+    color:var(--c-sec-b) ;
+  }
+  @media  (min-width:557px) and (max-width:1440px) {
+    h1{
+    font-size: 2rem;
+    text-align: center;
+    place-self: center;
+    padding: 40px;
+    font-weight: 700;
+    letter-spacing: -.06em;
+    
+  }
+  .shadow1{
+  position: absolute;
+  bottom:0%;
+  left: 10%;
+  width: 2px;
+  height: 2px;
+  background-color:  #ca192b;
+  border-radius: 100%;
+  box-shadow: 0px 0px 200px 200px #7b0d18;
+}
+.shadow2{
+  top:40%;
+  right: 2%;
+  width: 2px;
+  height: 2px;
+  background-color:  #95464e;
+  border-radius: 100%;
+  box-shadow: 0px 0px 200px 200px #7b0d18;
+}
+  }
+  @media  (min-width:1024px) and (max-width:1440px) {
+    .shadow1{
+  bottom:0%;
+  left: 10%;
+  width: 2px;
+  height: 2px;
+  background-color:  #ca192b;
+  border-radius: 100%;
+  box-shadow: 0px 0px 200px 200px #7b0d18;
+}
+.shadow2{
+  position: absolute;
+  top:40%;
+  right: -2%;
+  width: 2px;
+  height: 2px;
+  background-color:  #95464e;
+  border-radius: 100%;
+  box-shadow: 0px 0px 200px 200px #7b0d18;
+}
   }
 </style>

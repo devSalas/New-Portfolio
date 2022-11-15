@@ -19,20 +19,28 @@ const Navbar = () => {
           isActiveMenu.current.classList.add(styled.none)
 
           isActiveMenu.current.classList.remove(styled.ocultarMenuLujoso)
-        },500)
+        },400)
 
       }
       
     }
   return ( 
-    <header className={styled.header} id="acerca" >
+    <header className={styled.header}  >
       <h1>EstebanDev</h1>
+      
       <div  ref={isActiveMenu}  className={`${styled.headerMenu} ${styled.none}`}>
-        <a className={styled.a}  href="#acerca">Acerca</a>
-        <a className={styled.a} href="#proyectos">Proyectos</a>
-        <a className={styled.a} href="#skills">skills</a>
-        <a className={styled.a} href="#contacto">contacto</a>
+        <a onClick={handleClick} className={styled.a}  href="#tAcerca">Acerca</a>
+        <a onClick={handleClick} className={styled.a} href="#skills">skills</a>
+        <a onClick={handleClick} className={styled.a} href="#proyectos">Proyectos</a>
+        <a onClick={handleClick} className={styled.a} href="#contacto">contacto</a>
       </div>
+      <div className={styled.NavbarDesktop}   >
+        <a  className={styled.ad}  href="#tAcerca">Acerca</a>
+        <a  className={styled.ad} href="#skills">skills</a>
+        <a  className={styled.ad} href="#proyectos">Proyectos</a>
+        <a  className={styled.ad} href="#contacto">contacto</a>
+      </div>
+      
       <div className={styled.boxMenu} >
         <img  className={styled.btnMenu} src="../../public/menu.svg" alt="" onClick={handleClick}/>
       </div>

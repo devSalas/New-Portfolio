@@ -36,3 +36,53 @@
 .p{
   text-align: justify;
 }
+.linkProyecto{
+  color:white;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  padding: 10px 20px;
+}
+.btnProyecto{
+  background-color: transparent;
+  background-color: var(--c-sec);
+  border:thin solid var(--c-sec);
+  
+}
+.btnProyecto:hover{
+  box-shadow: 0 0 25px var(--c-sec);
+}
+
+
+
+@media  (min-width:557px) and (max-width:992px) {
+  .boxTarjeta{
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+ .figure{
+  max-width: 500px;
+ }
+ .img{
+  width: 100%;
+ }
+ .description{
+  padding-left: 20px;
+ }
+}
+@media  (min-width:992px) and (max-width:1440px) {
+  .boxTarjeta{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+ .figure{
+  height: 250px;
+ }
+ .img{
+  width: 100%;
+  max-width: 382px;
+ }
+ .description{
+  padding-left: 20px;
+ }
+}

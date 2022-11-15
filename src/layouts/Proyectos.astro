@@ -1,26 +1,35 @@
 ---
 import TarjetaProyecto from "../components/TarjetaProyecto";
+  const pro1={
+    uno:"Esta pagina te permitira encontrar las imagenes en muy buena calidad, de manera rapida.",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes: HTML, CSS , JS y la API de Unspash.",
 
+  }
+  const pro2={
+    uno:"En esta pagina encontraras los mejores Gift que te puedas imaginar 😁",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes: REACT y la api de Unspash",
+
+  }
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h2 id="proyectos">PROYECTOS</h2>
-  <TarjetaProyecto title={"titulo"}  img={"https://placeimg.com/500/400/nature" } figcaption={"naturalez"} description={""} url={"https://estebansalas.xyz/"}  />
-  <TarjetaProyecto title={"titulo"}  img={"https://placeimg.com/500/400/nature" } figcaption={"naturalez"} description={""} url={"https://estebansalas.xyz/"} />
 
-</body>
-</html>
+<div class="containerProyecto" id="proyectos">
+  <h2 >PROYECTOS</h2>
+  <TarjetaProyecto title={"BUSCADOR DE IMAGENES"}  img={"./buscadorImg.jpg" } figcaption={"naturalez"} description={pro1} url={"https://estebansalas.xyz/"}  />
+
+  <TarjetaProyecto title={"BUSCADOR DE GIFT"}  img={"./giphy-img.jpg" } figcaption={"naturalez"} description={pro2} url={"https://estebansalas.xyz/"} />
+
+</div>
 
 <style>
   h2{
     margin: 20px 0px;
   }
+  .containerProyecto{
+    padding: 50px 0px 0px 0px;
+  }
+
+
+
 </style>
+
