@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
       
       <div className={styled.boxMenu} >
-        <img  className={styled.btnMenu} src="../../public/menu.svg" alt="" onClick={handleClick}/>
+        <img  className={styled.btnMenu} src="./menu.svg" alt="" onClick={handleClick}/>
       </div>
     </header>
    );
