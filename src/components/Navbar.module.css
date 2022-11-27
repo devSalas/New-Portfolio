@@ -17,7 +17,7 @@
   position: fixed;
   top:0px;
   left: 0%;
-  
+  z-index: 100;
   box-shadow: 0 0 10px #c8d3e0;
 
 }
@@ -42,6 +42,7 @@
   min-width: 320px;
   overflow: hidden;
   animation:showMenu 1s ease 0s forwards;
+  
 }
 
 .a:hover{
@@ -120,10 +121,10 @@
 }
 .header{
   height: 60px;
+  
 }
 .NavbarDesktop{
   width: 100%;
-  
   max-width: 1200px;
   display: flex;
   justify-content: end;

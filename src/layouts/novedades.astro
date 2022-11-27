@@ -1,0 +1,102 @@
+<div class="containerNovedades">
+  <h2 class="h2">NOVEDADES</h2>
+  <h3 class="h3">Actualmente estoy trabajando en el proyecto PLAY VIDEOS</h3>
+  <div class="box-grid-project">
+    <div class="box-description-project">
+      <p>Es una aplicacion de videos tipo Youtube, con todas sus funcionalidades.</p><br>
+      <p>Esta aplicacion tiene el proposito, de domostrar todos nuestros conocimentos adquiridos</p><br>
+      <p>Para esta aplicacion se esta utilizando <span>TECNOLOGIAS MODERNAS COMO </span>: </p> <br>
+      <div>
+        REACT <br><br>
+        TAILWIND <br><br>
+        MONGO <br><br>
+        REACTQUERY <br><br>
+        NODE.JS <br><br>
+
+      </div>
+    </div>
+    <div class="box-image">
+      <h4>EL DISEÑO</h4>
+      <figure>
+        <img class="nov-img" src="xplayvideos.jpg" alt="">
+       <!--  <ficaption>
+          esta imagen fue saca de driblle
+        </ficaption> -->
+      </figure>
+      <button class="btn-main"> <a href="https://video-platform-app-2t7v-lun4lw2h4-devsalas.vercel.app/" target="_blank">ver Proyecto</a> </button>
+    </div>
+  </div>
+</div>
+
+<style>
+  
+  .btn-main{
+    width:250px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: var(--c-sec);
+    padding:0;
+    border:none;
+    margin: 30px 0px;
+    cursor: pointer;
+  }
+  .btn-main:hover{
+    box-shadow: 0 0 25px var(--c-sec);
+  }
+
+  .btn-main a{
+    color:var(--c-third);
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    height: 100%;
+  }
+
+  .box-description-project{
+  text-align: start;
+  padding:10px 0px;
+  }
+
+  .containerNovedades{
+  border-radius: 15px;
+  border: 3px solid #ed3c4d;
+  padding:10px
+}
+.h2{
+  padding:10px 0px;
+  margin: 0px;
+/*   border-bottom: 3px solid #ed3c4d; */
+}
+  .containerNovedades>*:not(.h2){
+    /* text-align: start; */
+    margin: 20px 0px;
+    font-weight: normal;
+    line-height: 1.2
+    
+  }
+  h4{
+  margin: 20px 0px;
+  }
+
+.nov-img{
+  border-radius:10px;
+  width: 100%;
+}
+
+figure{ 
+  
+}
+
+
+@media  (min-width:776px){
+  .box-grid-project{
+    display: grid;
+    grid-template-columns: 40% 58%;
+    gap: 2%;
+  }
+  .nov-img{
+  border-radius:20px;
+
+}
+}
+</style>

@@ -20,7 +20,7 @@ const TarjetaProyecto = ({title,img,figcaption,description,url}) => {
       </p>
 
         <button className={styled.btnProyecto}>
-        <a href={url} className={styled.linkProyecto}>ver proyecto</a>
+        <a href={url} target="_blank" className={styled.linkProyecto}>ver proyecto</a>
         </button> 
       </div>
 
