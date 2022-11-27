@@ -1,37 +1,76 @@
 ---
 import Navbar from '../components/Navbar';
 ---
+<div class="containerTodo">
+  
+  <div class="containerAcerca">
 
-
-<div class="containerAcerca">
-  <Navbar client:load/>
-  <div id="tAcerca"></div>
-  <div class="box-img">
-    <img src="./perfil.jpg" alt="" />
-  </div>
-    <h1>
-      <span class="span" style='--content:"Hola, yo soy";--start-color:#;--end-color:#; '>Hola, yo soy </span>
-      <span class="span span-name" style='--content:"Esteban Salas sulca";--start-color:#ed3c4d;--end-color:#ed3c4d; '>Esteban Salas sulca </span>
-      <span class="span"  style='--content:"Frontend Developer  en React.js";--start-color:#;--end-color:#; '>Programador  en <span class="spanTd">React.js</span> y  <span class="spanTd">Node.js</span> </span>
-
-    </h1>
-
-  <div class="main-description">
+    <Navbar client:load/>
     
-    <p class="description-p">
-      Llevo 2 años en este mundo de la programacion
-      <br/>
-      construyendo sitios web como aplicaciones web, aplicando tecnologias modernas.
-    </p>
-    <button class="btn-main"> <a href="../../public/cv/Curriculo-Esteban Salas sulca.pdf" target="_blank">cv</a> </button>
+    <div id="tAcerca"></div>
+    <div class="box-img">
+      <img class="photoMobile" src="./perfil.jpg" alt="" />
+    </div>
+      <h1>
+        <span class="span" style='--content:"Hola, yo soy";--start-color:#;--end-color:#; '>Hola </span>
+        <span class="span span-name" style='--content:"Esteban Salas sulca";--start-color:#ed3c4d;--end-color:#ed3c4d; '>¡Soy Esteban salas! </span>
+        <span class="span"  style='--content:"Frontend Developer  en React.js";--start-color:#;--end-color:#; '>Programador <span class="spanTd">junior </span>  <!--y  <span class="spanTd">Node.js</span> --> </span>
+  
+      </h1>
+  
+    <div class="main-description">
+      
+      <p class="description-p">
+        Construyo paginas web y aplicaciones web. <br>
+        <sub>
+        "mi jobi se transformo en mi profesion"</sub>
+      </p>
+
+      <button class="btn-main"> <a href="../../public/cv/Curriculo-Esteban Salas sulca.pdf" target="_blank">cv</a> </button>
+      <div class="links-description">
+        
+        <div class="link-description">
+          <a href="https://github.com/devSalas" target="_blank">
+            <img src="./github.svg" alt="" >
+          </a>
+        </div>
+        <div class="link-description">
+          <a href="https://www.linkedin.com/in/esteban-salas-sulca-28354020a/" target="_blank">
+            <img src="./linkedin.svg" alt="" >
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <slot/>
   </div>
- <!--  <div class="shadow1"></div>
-  <div class="shadow2"></div> -->
-  <slot/>
+  <div class="boxImage">
+    <img  src="/conJean.png" alt="">
+  </div>
+
+
 </div>
 
 
 <style>
+
+.boxImage{
+ display: none;
+}
+
+.links-description{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+.link-description{
+/* width:40px; */
+margin:5px
+}
+
   :root{
   --c-pry :  #202733;
   --c-pry-a : #1b232d60;
@@ -138,16 +177,8 @@ import Navbar from '../components/Navbar';
   .span-name{
     color:var(--c-sec-b) ;
   }
-  @media  (min-width:557px) and (max-width:1440px) {
-    h1{
-    font-size: 2rem;
-    text-align: center;
-    place-self: center;
-    padding: 40px;
-    font-weight: 700;
-    letter-spacing: -.06em;
-    
-  }
+/*   @media  (min-width:557px) and (max-width:1440px) {
+
   .shadow1{
   position: absolute;
   bottom:0%;
@@ -167,26 +198,72 @@ import Navbar from '../components/Navbar';
   border-radius: 100%;
   box-shadow: 0px 0px 200px 200px #7b0d18;
 }
-  }
-  @media  (min-width:1024px) and (max-width:1440px) {
-    .shadow1{
-  bottom:0%;
-  left: 10%;
-  width: 2px;
-  height: 2px;
-  background-color:  #ca192b;
-  border-radius: 100%;
-  box-shadow: 0px 0px 200px 200px #7b0d18;
-}
-.shadow2{
-  position: absolute;
-  top:40%;
-  right: -2%;
-  width: 2px;
-  height: 2px;
-  background-color:  #95464e;
-  border-radius: 100%;
-  box-shadow: 0px 0px 200px 200px #7b0d18;
-}
+  } */
+
+
+
+
+  @media  (min-width:1024px) {
+
+    h1{
+    font-size: 2rem;
+    text-align: center;
+    place-self: center;
+    padding: 40px;
+    font-weight: 700;
+    letter-spacing: -.06em;
+    
+    }
+
+    .boxImage{
+    display: block;
+    align-self: center;
+    justify-self: center;
+    min-width: 50%;
+    max-width:70%;
+    border-bottom: 5px solid #ca192b;
+    border-radius: 10px;
+    }
+    .boxImage img{
+      width:100%;
+    }
+
+/*     .shadow1{
+      bottom:0%;
+      left: 10%;
+      width: 2px;
+      height: 2px;
+      background-color:  #ca192b;
+      border-radius: 100%;
+      box-shadow: 0px 0px 200px 200px #7b0d18;
+    } 
+    .shadow2{
+      position: absolute;
+      top:40%;
+      right: -2%;
+      width: 2px;
+      height: 2px;
+      background-color:  #95464e;
+      border-radius: 100%;
+      box-shadow: 0px 0px 200px 200px #7b0d18;
+    } */
+    .box-img{
+      display: none;
+    }
+
+    .containerAcerca{
+      grid-template-rows: 20% 30%  40%; 
+    }
+    .containerTodo{
+		
+		/* color: white !important; */
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+
+	}
   }
 </style>
