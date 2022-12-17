@@ -1,7 +1,7 @@
 :root{
   --c-pry : #1b232d;
   --c-pry-a : #1b232d60;
-  --c-sec :#ed3c4d;
+  --c-sec :#ed2243;
   --c-third:#ffffff;
 }
 .header{
@@ -13,7 +13,7 @@
   width: 100%;
   padding:0px 20px;
   overflow: hidden;
-  background: #1e2835;
+  background-color:#090909;
   position: fixed;
   top:0px;
   left: 0%;
@@ -36,7 +36,7 @@
   position:fixed;
   inset:10px 10px;
   border-radius: 10px;
-  background-color: #3a414ae7;
+  background-color:#ed3c4d;
   font-size: 30px;
   max-width: 550px;
   min-width: 320px;
@@ -67,7 +67,6 @@
   position: relative;
   z-index: 100;
   cursor: pointer;
-
 }
 .NavbarDesktop{
   display: none;

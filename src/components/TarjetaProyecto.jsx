@@ -18,9 +18,11 @@ const TarjetaProyecto = ({title,img,figcaption,description,url}) => {
        <p className={styled.p}>
         {description.tres || "  "}
       </p>
-
         <button className={styled.btnProyecto}>
-        <a href={url} target="_blank" className={styled.linkProyecto}>ver proyecto</a>
+        <a href={url} target="_blank" className={`${styled.linkProyecto} ${styled.linkProyectoUno}` }>ver proyecto</a>
+        </button> 
+        <button className={styled.btnGithub}>
+        <a href={url} target="_blank" className={`${styled.linkProyecto} ${styled.linkProyectoDos}`}>codigo fuente</a>
         </button> 
       </div>
 

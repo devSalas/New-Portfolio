@@ -8,9 +8,6 @@ import Navbar from '../components/Navbar';
     <Navbar client:load/>
     
     <div id="tAcerca"></div>
-    <div class="box-img">
-      <img class="photoMobile" src="./perfil.jpg" alt="" />
-    </div>
       <h1>
         <span class="span animate__animated  animate__bounceInLeft" style='--content:"Hola, yo soy";--start-color:#;--end-color:#; '>Hola </span>
         <span class="span span-name animate__animated  animate__bounceInLeft" style='--content:"Esteban Salas sulca";--start-color:#ed3c4d;--end-color:#ed3c4d; '>¡Soy Esteban salas! </span>
@@ -26,7 +23,7 @@ import Navbar from '../components/Navbar';
         "mi jobi se transformo en mi profesion"</sub>
       </p>
 
-      <button class="btn-main"> <a href="./cv/Curriculo-Esteban Salas sulca.pdf" target="_blank">cv</a> </button>
+      <button class="btn-main"> <a href="./cv/CV-frontend.pdf" target="_blank">cv</a> </button>
       <div class="links-description">
         
         <div class="link-description">
@@ -47,9 +44,7 @@ import Navbar from '../components/Navbar';
 
     <slot/>
   </div>
-  <div class="boxImage">
-    <img  src="/conJean.png" alt="">
-  </div>
+
 
 
 </div>
@@ -72,10 +67,10 @@ margin:5px
 }
 
   :root{
-  --c-pry :  #202733;
-  --c-pry-a : #1b232d60;
-  --c-sec :#ca192b;
-  --c-sec-b:#dd1327;
+  --c-pry :  #090909;
+  --c-pry-a : #090909;
+  --c-sec :#ed2243;
+  --c-sec-b:#ed2243;
   --c-third:#ffffff;
 }
 .shadow1{
@@ -161,7 +156,7 @@ margin:5px
     font-size: 1.6rem;
     text-align: center;
     place-self: center;
-    padding: 40px;
+    /* padding: 40px; */
     font-weight: 700;
     letter-spacing: -.06em;
     
@@ -209,7 +204,7 @@ margin:5px
     font-size: 2rem;
     text-align: center;
     place-self: center;
-    padding: 40px;
+   /*  padding: 40px; */
     font-weight: 700;
     letter-spacing: -.06em;
     
@@ -259,7 +254,7 @@ margin:5px
 		/* color: white !important; */
     max-width: 1440px;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:100%;
     box-sizing: border-box;
     height: 100vh;
     overflow: hidden;
