@@ -1,5 +1,5 @@
 import styled from "./TarjetaProyecto.module.css"
-const TarjetaProyecto = ({title,img,figcaption,description,url}) => {
+const TarjetaProyecto = ({title,img,description,url,codigo}) => {
 
   return ( 
     <>
@@ -22,7 +22,7 @@ const TarjetaProyecto = ({title,img,figcaption,description,url}) => {
         <a href={url} target="_blank" className={`${styled.linkProyecto} ${styled.linkProyectoUno}` }>ver proyecto</a>
         </button> 
         <button className={styled.btnGithub}>
-        <a href={url} target="_blank" className={`${styled.linkProyecto} ${styled.linkProyectoDos}`}>codigo fuente</a>
+        <a href={codigo} target="_blank" className={`${styled.linkProyecto} ${styled.linkProyectoDos}`}>codigo fuente</a>
         </button> 
       </div>
 
