@@ -10,14 +10,33 @@ import TarjetaProyecto from "../components/TarjetaProyecto";
     dos:"Esta pagina se desarrollo con las tecnologias  siguientes: REACT y la api de Unspash",
 
   }
+  const pro3={
+    uno:"En esta aplicacion web tiene como objetivo simular como funciona youtube😁",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes: REACT,REACT-QUERY-TAILWIND",
+
+  }
+  const pro4={
+    uno:"En esta aplicacion web tiene como objetivo Traducir del idioma Ingles a Español y viceversa",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes:FETCH, REACT,CSS-MODULE",
+
+  }
+  const pro5={
+    uno:"Esta landing page tiene como objetivo Mostrar mi información y mis proyectos",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes: Framework Astro, tecnologia que permite usar React. y prioriza el html por encima de javascript ",
+
+  }
 ---
 
 
 <div class="containerProyecto" id="proyectos">
   <h2 >PROYECTOS</h2>
-  <TarjetaProyecto title={"BUSCADOR DE IMAGENES"}  img={"./buscadorImg.jpg" } figcaption={"naturalez"} description={pro1} url={"https://buscador-fotos.netlify.app"}  />
+  <TarjetaProyecto title={"BUSCADOR DE IMAGENES"}  img={"./buscadorImg.jpg" } description={pro1} url={"https://buscador-fotos.netlify.app"} codigo={"https://github.com/devSalas/Buscador-de-fotos"}  />
 
-  <TarjetaProyecto title={"BUSCADOR DE GIFT"}  img={"./giphy-img.jpg" } figcaption={"naturalez"} description={pro2} url={"https://git-buscador.netlify.app"} />
+  <TarjetaProyecto title={"BUSCADOR DE GIFT"}  img={"./giphy-img.jpg" } description={pro2} url={"https://git-buscador.netlify.app"} codigo={"https://github.com/devSalas/giphy-page"} />
+
+  <TarjetaProyecto title={"PLAY VIDEOS"}  img={"./xplayvideos.jpg" } description={pro3} url={"https://video-platform-app-2t7v.vercel.app/"} codigo={"https://github.com/devSalas/pageVideos"} />
+  <TarjetaProyecto title={"TRADUCTOR INGLES-ESPAÑOL"}  img={"./appTraslate.jpg" } description={pro4} url={"https://traducerapido.netlify.app"} codigo={"https://github.com/devSalas/App-translator"} />
+  <TarjetaProyecto title={"PORTAFOLIO"}  img={"./portafolio.jpg" } description={pro5} url={"https://estebansalas.xyz/"} codigo={"https://github.com/devSalas/New-Portfolio"} />
 
 </div>
 

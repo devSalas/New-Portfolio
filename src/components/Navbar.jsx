@@ -26,7 +26,7 @@ const Navbar = () => {
     }
   return ( 
     <header className={styled.header}  >
-      <h1 className="animate__animated animate__bounce">EstebanDev</h1>
+      <h1 className={`${styled.h1} animate__animated animate__bounce`} ><a href="">EstebanDev</a></h1>
       
       <div  ref={isActiveMenu}  className={`${styled.headerMenu} ${styled.none}`}>
         <a onClick={handleClick} className={styled.a}  href="#tAcerca">Acerca</a>

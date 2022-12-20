@@ -4,6 +4,10 @@
   --c-sec :#ed2243;
   --c-third:#ffffff;
 }
+.h1 a{
+  color: white;
+  text-decoration: none;
+}
 .header{
   display: flex;
   justify-content: space-between;
