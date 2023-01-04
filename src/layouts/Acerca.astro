@@ -11,14 +11,14 @@ import Navbar from '../components/Navbar';
       <h1>
         <span class="span animate__animated  animate__bounceInLeft" style='--content:"Hola, yo soy";--start-color:#;--end-color:#; '>Hola </span>
         <span class="span span-name animate__animated  animate__bounceInLeft" style='--content:"Esteban Salas sulca";--start-color:#ed3c4d;--end-color:#ed3c4d; '>¡Soy Esteban salas! </span>
-        <span class="span animate__animated  animate__bounceInLeft"  style='--content:"Frontend Developer  en React.js";--start-color:#;--end-color:#; '>Programador <span class="spanTd">junior </span>  <!--y  <span class="spanTd">Node.js</span> --> </span>
+        <span class="span animate__animated  animate__bounceInLeft"  style='--content:"Frontend Developer  en React.js";--start-color:#;--end-color:#; '>Programador Freelance <span class="spanTd"></span>  <!--y  <span class="spanTd">Node.js</span> --> </span>
   
       </h1>
   
     <div class="main-description">
       
       <p class="description-p animate__animated animate__bounceInRight">
-        llevo +2 años en este mundo de la programación construyendo sitios web y aplicaciones web. 
+        llevo +1 años en este mundo de la programación construyendo sitios web y aplicaciones web. 
       </p>
 <!--       <p class="description-p animate__animated animate__bounceInRight">
         Soy muy apasionado por mi carrera, lo que hace que aprenda rápido y este siempre este actualizado. Busco poder aportar mi conocimiento en proyectos grandes.  
@@ -102,11 +102,12 @@ margin:5px
     background-color:rgba(14, 13, 13, 0.694);
     background-blend-mode: darken;
     background-position: center;
-    max-width: 1440px;
+    width: 100%;
     display: grid;
     grid-template-rows: 10% 20% 35% 40%; 
     height: 100vh;
     overflow: hidden;
+
     
 
 	}
@@ -158,8 +159,6 @@ margin:5px
   }
 
   h1{
-/*     position: relative;
-    z-index: 100; */
     font-size: 1.6rem;
     text-align: center;
     place-self: center;
@@ -179,29 +178,6 @@ margin:5px
   .span-name{
     color:var(--c-sec-b) ;
   }
-/*   @media  (min-width:557px) and (max-width:1440px) {
-
-  .shadow1{
-  position: absolute;
-  bottom:0%;
-  left: 10%;
-  width: 2px;
-  height: 2px;
-  background-color:  #ca192b;
-  border-radius: 100%;
-  box-shadow: 0px 0px 200px 200px #7b0d18;
-}
-.shadow2{
-  top:40%;
-  right: 2%;
-  width: 2px;
-  height: 2px;
-  background-color:  #95464e;
-  border-radius: 100%;
-  box-shadow: 0px 0px 200px 200px #7b0d18;
-}
-  } */
-
 
 
 
@@ -211,7 +187,6 @@ margin:5px
     font-size: 2rem;
     text-align: center;
     place-self: center;
-   /*  padding: 40px; */
     font-weight: 700;
     letter-spacing: -.06em;
     
@@ -229,26 +204,6 @@ margin:5px
     .boxImage img{
       width:100%;
     }
-
-/*     .shadow1{
-      bottom:0%;
-      left: 10%;
-      width: 2px;
-      height: 2px;
-      background-color:  #ca192b;
-      border-radius: 100%;
-      box-shadow: 0px 0px 200px 200px #7b0d18;
-    } 
-    .shadow2{
-      position: absolute;
-      top:40%;
-      right: -2%;
-      width: 2px;
-      height: 2px;
-      background-color:  #95464e;
-      border-radius: 100%;
-      box-shadow: 0px 0px 200px 200px #7b0d18;
-    } */
     .box-img{
       display: none;
     }
@@ -257,9 +212,7 @@ margin:5px
       grid-template-rows: 20% 30%  40%; 
     }
     .containerTodo{
-		
-		/* color: white !important; */
-    max-width: 1440px;
+
     display: grid;
     grid-template-columns:100%;
     box-sizing: border-box;

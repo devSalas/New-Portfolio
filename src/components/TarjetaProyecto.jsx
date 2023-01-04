@@ -5,7 +5,7 @@ const TarjetaProyecto = ({title,img,description,url,codigo}) => {
     <>
     <div className={styled.boxTarjeta}>
       <figure className={styled.figure}>
-        <img className={styled.img} src={img} alt="" />
+       <a  href={url} target="_blank"> <img className={styled.img} src={img} alt="" /> </a>
       </figure>
       <div className={styled.description}>
       <h3 className={styled.h3}>{title.toUpperCase()}</h3>

@@ -25,6 +25,7 @@
 }
 .h3{
   text-align: start;
+  font-weight: 300;
 }
 .br{
 
@@ -34,6 +35,7 @@
 }
 .p{
   text-align: justify;
+  line-height: 1.5em;
 }
 .linkProyecto{
   color:white;
@@ -80,7 +82,7 @@
   .boxTarjeta{
     display: grid;
     grid-template-columns: 45% 55%;
-  }
+  } 
  .figure{
   max-width: 500px;
  }
