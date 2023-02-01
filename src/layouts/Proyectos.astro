@@ -29,28 +29,39 @@ import TarjetaProyecto from "../components/TarjetaProyecto";
   uno:"página web para una empresa de Reparación de computadoras, el cual contiene imformación de la empresa, como servicio, productos para vender  y su ubicación."
   }
   const peluqueriaKaty={
-  uno:"página web para una peluquería - barbería, en la que se encuentra la ubicación,los servicios que brindad y  mas informacion de la empresa."
+  uno:"página web para una peluquería - barbería, en la que se encuentra la ubicación,los servicios que brindad y  mas informacion de la empresa y producto."
+  }
+  const frutexs = {
+  uno:"pagina web para una Empresa de venta de Concentrados de Fruta. Contiene imformación de la empresa y producto " 
   }
 ---
 
 
 <div class="containerProyecto" id="proyectos">
-  <h2 >PROYECTOS</h2>
+  <h2 >TRABAJOS</h2>
+  <TarjetaProyecto title={" empresa 'frutex' (2023)"}  img={"./frutexs.jpg" } description={frutexs} url={"https://frutexs.netlify.app/"} codigo={"https://github.com/devSalas/page-frutexs"} />
+
+  <TarjetaProyecto title={"PELUQUERIA - BARBERIA 'KATY' (2022)"}  img={"./peluqueria.jpg" } description={peluqueriaKaty} url={"https://peluqueria-katy.netlify.app/"} codigo={"https://github.com/devSalas/barberia-page"} />
+
+
+  <TarjetaProyecto title={"SERVICIO TECNICO 'Servicios Oscar' (2022)"}  img={"./pc-tecnico.jpg" } description={pcSoluciones} url={"https://tecnicopc.netlify.app"} codigo={"https://github.com/devSalas/page-tecnicoPc"}  />
+
+  <h2 class="h2-proyectos">PROYECTOS</h2>
+
+
+  <TarjetaProyecto title={"Chat de Mensajes "}  img={"./chat.png" } description={pro5} url={"https://red-social-five.vercel.app/"} codigo={"https://github.com/devSalas/red-social"} />
+
+  <TarjetaProyecto title={"Ecommerce 'shop' "}  img={"./ecommerce.png" } description={pro5} url={"https://ecomerce-frontend.vercel.app/"} codigo={"https://github.com/devSalas/ecomerce-frontend"} />
+
+  <TarjetaProyecto title={"PLAY VIDEOS"}  img={"./xplayvideos.jpg" } description={pro3} url={"https://play-videos-app.vercel.app/"} codigo={"https://github.com/devSalas/pageVideos"} />
+
   
-  <TarjetaProyecto title={"PELUQUERIA - BARBERIA 'KATY' (2021)"}  img={"./peluqueria.jpg" } description={peluqueriaKaty} url={"https://peluqueria-katy.netlify.app/"} codigo={"https://github.com/devSalas/barberia-page"} />
-
-
-  <TarjetaProyecto title={"SERVICIO TECNICO 'Servicios Oscar' (2021)"}  img={"./pc-tecnico.jpg" } description={pcSoluciones} url={"https://tecnicopc.netlify.app"} codigo={"https://github.com/devSalas/page-tecnicoPc"}  />
-
-
-
-  <TarjetaProyecto title={"BUSCADOR DE IMAGENES"}  img={"./buscadorImg.jpg" } description={pro1} url={"https://buscador-fotos.netlify.app"} codigo={"https://github.com/devSalas/Buscador-de-fotos"}  />
+<!--   <TarjetaProyecto title={"BUSCADOR DE IMAGENES"}  img={"./buscadorImg.jpg" } description={pro1} url={"https://buscador-fotos.netlify.app"} codigo={"https://github.com/devSalas/Buscador-de-fotos"}  /> -->
  
   <TarjetaProyecto title={"BUSCADOR DE GIFT"}  img={"./giphy-img.jpg" } description={pro2} url={"https://git-buscador.netlify.app"} codigo={"https://github.com/devSalas/giphy-page"} />
 
-  <TarjetaProyecto title={"PLAY VIDEOS"}  img={"./xplayvideos.jpg" } description={pro3} url={"https://video-platform-app-2t7v.vercel.app/"} codigo={"https://github.com/devSalas/pageVideos"} />
-<!--   <TarjetaProyecto title={"TRADUCTOR INGLES-ESPAÑOL"}  img={"./appTraslate.jpg" } description={pro4} url={"https://traducerapido.netlify.app"} codigo={"https://github.com/devSalas/App-translator"} /> -->
-<TarjetaProyecto title={"PORTAFOLIO"}  img={"./portafolio.jpg" } description={pro5} url={"https://estebansalas.xyz/"} codigo={"https://github.com/devSalas/New-Portfolio"} />
+
+<!-- <TarjetaProyecto title={"PORTAFOLIO"}  img={"./portafolio.jpg" } description={pro5} url={"https://estebansalas.xyz/"} codigo={"https://github.com/devSalas/New-Portfolio"} /> -->
 
 </div>
  
@@ -66,7 +77,9 @@ import TarjetaProyecto from "../components/TarjetaProyecto";
     margin:auto;
   }
 
-
+  .h2-proyectos{
+    margin: 60px 0px 40px 0px;
+  }
 
 </style>
 
