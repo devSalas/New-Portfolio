@@ -20,11 +20,20 @@ import TarjetaProyecto from "../components/TarjetaProyecto";
     dos:"Esta pagina se desarrollo con las tecnologias  siguientes:FETCH, REACT,CSS-MODULE.",
 
   }
-  const pro5={
-    uno:"Esta landing page tiene como objetivo Mostrar mi información y mis proyectos",
+  const chat={
+    uno:"Esta aplicación web sirva para poder chatear con otra persona en tiempo real",
     dos:"Esta pagina se desarrollo con las tecnologias  siguientes: Framework Astro, tecnologia que permite usar React. y prioriza el html por encima de javascript. ",
 
   }
+  const ecommerceShop={
+    uno:"Aplicación ecommerce para realizar compras de vestimenta con pasarela de pago",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes: Libreria React, Tailwind, React-router-Dom, Auth0"
+  }
+  const CompuSalas={
+    uno:"Aplicación ecommerce de Computadoras ,con pasarela de pagos Stripe",
+    dos:"Esta pagina se desarrollo con las tecnologias  siguientes: Libreria React,Typescript, Tailwind, React-router-Dom, zustand, Node.js"
+  }
+  /* trabajos */
   const pcSoluciones={
   uno:"página web para una empresa de Reparación de computadoras, el cual contiene imformación de la empresa, como servicio, productos para vender  y su ubicación."
   }
@@ -48,10 +57,11 @@ import TarjetaProyecto from "../components/TarjetaProyecto";
 
   <h2 class="h2-proyectos">PROYECTOS</h2>
 
+  <TarjetaProyecto title={"Ecommerce 'CompuSalas' "}  img={"./compuSalas.jpg" } description={CompuSalas} url={"https://compusalas.estebansalas.xyz/"} codigo={"https://github.com/devSalas/ecommerce-compuSalas"} />
 
-  <TarjetaProyecto title={"Chat de Mensajes "}  img={"./chat.png" } description={pro5} url={"https://red-social-five.vercel.app/"} codigo={"https://github.com/devSalas/red-social"} />
+  <TarjetaProyecto title={"Chat de Mensajes "}  img={"./chat.png" } description={chat} url={"https://red-social-five.vercel.app/"} codigo={"https://github.com/devSalas/red-social"} />
 
-  <TarjetaProyecto title={"Ecommerce 'shop' "}  img={"./ecommerce.png" } description={pro5} url={"https://ecomerce-frontend.vercel.app/"} codigo={"https://github.com/devSalas/ecomerce-frontend"} />
+  <TarjetaProyecto title={"Ecommerce 'shop' "}  img={"./ecommerce.png" } description={ecommerceShop} url={"https://ecomerce-frontend.vercel.app/"} codigo={"https://github.com/devSalas/ecomerce-frontend"} />
 
   <TarjetaProyecto title={"PLAY VIDEOS"}  img={"./xplayvideos.jpg" } description={pro3} url={"https://play-videos-app.vercel.app/"} codigo={"https://github.com/devSalas/pageVideos"} />
 
