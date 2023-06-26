@@ -29,7 +29,7 @@
       <figure class="skill_know">
         <img class="skill_know-img" src="./tailwind.png" alt="">
         <figcaption>Tailwind</figcaption>
-      </figure>
+      </figure> 
     </div>
     <h3 class="skills-h3">BACKEND</h3>
 
@@ -41,10 +41,6 @@
       <figure class="skill_know">
         <img class="skill_know-img" src="./php.jpg" alt="">
         <figcaption>PHP</figcaption>
-      </figure>
-      <figure class="skill_know">
-        <img class="skill_know-img" src="./laravel.png" alt="">
-        <figcaption>Laravel</figcaption>
       </figure>
     </div>
     <h3 class="skills-h3">BASE DE DATOS</h3>
@@ -94,11 +90,14 @@ margin:30px 0px 10px 0px;
   display:flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap:20px;
 }
 .skill_know{
   max-width: 70px;
-  margin:10px
-  
+  margin:10px;
+  display:grid;
+  gap: 20px;
+
 }
 
 .skill_know-img{

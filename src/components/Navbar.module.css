@@ -2,10 +2,11 @@
   --c-pry : #1b232d;
   --c-pry-a : #1b232d60;
   --c-sec :#ed2243;
-  --c-third:#ffffff;
+  --c-third:#e9dddd;
 }
 .h1 a{
-  color: white;
+  color: var(--c-sec);
+  font-size: 20px;
   text-decoration: none;
 }
 .header{
@@ -76,7 +77,7 @@
   display: none;
 }
 .ad{
-  color: white;
+  color: var(--c-third);
   text-decoration: none;
   margin: 0px 20px;
   height: 100%;

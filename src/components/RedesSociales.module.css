@@ -1,9 +1,9 @@
 .link{
   display: grid;
   place-items: center;
+  margin: 40px 0px;
+  gap:10px;
   
-
-  margin: 20px 0px;
 }
 .imgLink {
   width: 50px;
